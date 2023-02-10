@@ -1,0 +1,45 @@
+Name: Alarms
+Id: g=ed89f9b985505c355fdd5b6daf951e24
+Type: FolderType
+Children:
+- Name: DigitalAlarm1
+  Id: g=102d1ad0d373349db033ad847f7ce2aa
+  Type: OffNormalAlarmController
+  Children:
+  - Name: NormalStateValue
+    Id: g=0c4cee0781079742a6b5e114be628aba
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: InputValue
+    Id: g=62dedc8be62888dbe74c7ec28b4602f8
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Id: g=7963df1b6172eb7a0184e2a92930442b
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Variable1"
+      Children:
+      - Name: Mode
+        Id: g=9e23b55e785c90a310a7228534c60877
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LastEvent
+    Id: g=a7a801ad70e272238b804d3842f1675f
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Class: Reference
+    Target: ns=14;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=14;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=14;i=83
+    Direction: Forward
